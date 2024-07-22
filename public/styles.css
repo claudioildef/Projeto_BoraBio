@@ -16,17 +16,17 @@ body {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    color: white;
+    color: #d4e9ad;
     font-size: 16px;
     font-weight: 500;
-    border: rgb(255, 255, 255) solid 2px;
+    border: #d4e9ad solid 2px;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .default-button:hover{
     color: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(89, 2, 72, 1) 0%, rgba(143, 0, 189, 1) 29%, rgba(255, 136, 0, 1) 100%);
+    background: linear-gradient(24deg, rgba(165,189,116,1) 38%, rgba(219,147,115,1) 74%, rgba(241,130,115,1) 89%);
     ;
 }
 
@@ -38,7 +38,7 @@ body {
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     height: 5rem;
     width: 100%;
 }
@@ -50,21 +50,23 @@ body {
     height: 40px;
     font-size: 18px;
     font-weight: 500;
-    color: rgb(73, 1, 59);
-    border: rgba(89, 2, 72,0.6) solid 2px;
+    color: #d4e9ad;
+    border: rgb(212, 233, 173, 0.6) solid 2px;
     border-radius: 10px;
+    background-color: transparent;
 }
 
 .header-principal img {
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .img-input{
     display: flex;
-    width: 110%;
+    width: 100%;
     margin-left: 3vw;
-    justify-content: end;
-    align-items: end;
+    margin-bottom: 2vh;
+    justify-content: start;
+    align-items: center;
 }
 
 .menu {
@@ -87,7 +89,7 @@ body {
     justify-content: center;
     text-align: start;
     font-size: 18px;
-    color: white;
+    color: #d4e9ad;
     text-decoration: none;
     font-weight: 500;
     height: 20px;
@@ -102,12 +104,12 @@ body {
 
 .menu button:hover {
     color: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(89, 2, 72, 1) 0%, rgba(143, 0, 189, 1) 29%, rgba(255, 136, 0, 1) 100%);
+    background-color: #bfda8b
     ;
 }
 
 .menu a:hover {
-    color: rgb(220, 125, 255);
+    color: #bfda8b;
 }
 
 .menu a::after {
@@ -117,7 +119,7 @@ body {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: rgb(220, 125, 255);
+    background-color: #bfda8b;
     transition: all 0.5s ease;
 }
 
@@ -127,11 +129,10 @@ body {
 
 .top-img{
     z-index: 1;
-    background-image: url("img/viagemimgeditada4.png");
+    background-image: url("img/fundoLegume.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,111 +144,25 @@ body {
     border-top-right-radius: 0px;
 }
 
-.travel-input{
-    overflow: visible;
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    height: 60px;
-    width: 900px;
-    bottom: 50px;
-    gap: 10px;
-    border-radius: 10px;
-}
-
-.travel-details{
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    text-align: center;
-    gap: 10px;
-}
-
-.travel-details span{
-    color: white;
-    font-size: 32px;
-}
-
-.travel-input button{
-    margin-bottom: 8.8px ;
-    width: 10vw;
-    height: 43px;
-}
-
-.travel-input button::before{
-    content: "Vamos viajar!";
-}
-
-@media screen and (max-width: 1300px) {
-    .travel-input button::before{
-        content: "Viajar!";
-    }
-}
-
-.travel-input-date{
-    border: rgba(255, 255, 255, 0.6) solid 2px;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: white;
-    margin-bottom: 7px ;
-    width: 100px;
-    height: 42px;
-    border-radius: 10px;
-}
-
-.travel-input-text{
-    background-color: rgba(255, 255, 255, 0.3);
-    color: white;
-    font-size: 16px;
-    padding-left: 5px;
-    border: rgba(255, 255, 255, 0.6) solid 2px;
-    margin-bottom: 7px ;
-    width: 280px;
-    height: 40px;
-    border-radius: 10px;
-}
-
-.travel-input-text::placeholder{
-    color: white;
-}
-
-.travel-input-date::placeholder{
-    color: white;
+.top-img button{
+    width: 50vw;
+    height: 10vh;
+    font-size: 25px;
+    background-color: rgb(0, 0, 0, 0.8);
 }
 
 
 .impact-text{
     width: 100%;
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    padding-bottom: 13%;
+    padding-bottom: 5%;
     padding-right: 0.5%;
+    margin-top: 10%;
     color: white;
 
-}
-
-.impact-text span{
-    font-family: poppins;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 35px;
-    height: 55px;
-    border-bottom: 1px solid white;
-    color: white;
-    font-weight: 130;
-}
-
-.impact-text h1{
-    font-size: 35px;
-    margin: 10px;
 }
 
 .trending {
