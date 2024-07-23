@@ -4,20 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=".\stylesignup.css">
+    <link rel="stylesheet" href="../styles/stylesignup.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Eventrack</title>
 </head>
 
-<body class="body-login">
-    <div id="signupModal" class="signup-modal">
-        <div class="signup-modal-content">
-                <div class="signup-modal-header">
+<body class="body-signup">
+    <header class="header-principal">
+        <div class="img-input">
+            <a href="index.html"><img src="../img/logoBoraBioTexto.png" height="60px"></a>
+        </div>
+        <nav class="menu">
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Contato</a>
+            <a href="#contato">Sobre</a>
+            <button id="btn-create-account" class="default-button"><a href="login.html">Entrar</a></button>
+        </nav>
+        <div></div>
+    </header>
+    <div class="div-signup">
+        <div class="signup-format">
+                <div class="signup-header">
                     <h3>Cadastre-se</h3><span>e bora pro orgânico!</span>
                 </div>
             <form class="form-signup">
                 <div class="input-field">
                     <label for="name">Nome</label>
-                    <input id="name" type="text" placeholder="Nome Completo">
+                    <input id="name" class="" type="text" placeholder="Nome Completo">
                 </div>
                 <div class="input-field">
                     <label for="email">Email</label>
@@ -35,7 +48,7 @@
                 <button id="btn-signup" type="button" class="default-button">Cadastrar</button>
             </form>
             <hr>
-            <div class="login-action">Já possui conta? <a>Faça o login!</a></div>
+            <div class="login-action">Já possui conta? <a href="login.html">Faça o login!</a></div>
         </div>
     </div>
     </div>

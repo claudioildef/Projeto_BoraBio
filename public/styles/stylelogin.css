@@ -1,10 +1,12 @@
 html,body{
-    background-image:url("img/fundoLegume.jpeg"); ;
+    background-image:url("../img/fundoLegume.jpeg") ;
     height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
+
+
 
 .header-login{
     display: flex;
@@ -79,6 +81,7 @@ html,body{
     border-bottom: 2px solid #a5bd74;
     border-radius: 10px;
     background-color: transparent;
+    width: 100%;
     height: 100px;
     color:white ;
     font-size: 15px;
@@ -110,10 +113,6 @@ html,body{
     width: 60%;
 
     font-weight: 600;
-}
-
-.form-login button:hover{
-    font-weight: 700;
 }
 
 .form-login input{
@@ -156,4 +155,27 @@ html,body{
 
 .menu a:hover::after{
     width: 380%;
+}
+
+.preco-qtd{
+    display: flex;
+    flex-direction: row;
+    height: 15px;
+}
+
+.div-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width:40%;
+    padding: 30px;
+    border: 2px solid #a5bd74;
+    background-color:rgb(0, 0, 0, 0.8) ;
+    border-radius: 15px;
+}
+
+.btnproduct{
+    background-color:rgb(0, 0, 0, 0.8) ;
 }

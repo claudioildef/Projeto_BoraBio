@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/stylelogin.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Eventrack</title>
+</head>
+
+<body class="body-login">
+    <header class="header-principal">
+        <div class="img-input">
+            <a href="./index.html"><img src="../img/logoBoraBioTexto.png" height="60px"></a>
+
+        </div>
+        <nav class="menu">
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Contato</a>
+            <a href="#contato">Sobre</a>
+            <button id="btn-create-account" class="default-button"><a href="login.html">Entrar</a></button>
+        </nav>
+        <div></div>
+    </header>
+    <div class="div-product">
+        <img src="../img/logoBoraBioImg.png" class="img-login">
+        <form class="form-login">
+            <label for="nomeProduto">Nome do Produto</label>
+            <input id="nomeProduto" type="text" placeholder="nome do produto">
+            <div class="preco-qtd">
+                <div>
+                    <label for="preco">Preço</label>
+                    <input id="preco" type="number" placeholder="preço">
+                </div>
+                <div>
+                    <label for="qtd">Quantidade</label>
+                    <input id="qtd" type="number" placeholder="quantidade">
+                </div>
+            </div>
+        </form>
+       
+    </div>
+    <div class="btnproduct">
+    <button class="default-button" type="button" onclick="window.location.href='index.html'">Cadastrar
+        Produto</button>
+    </div>
+</body>
+
+</html>
