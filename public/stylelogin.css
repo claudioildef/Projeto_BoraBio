@@ -1,4 +1,5 @@
 html,body{
+    background-image:url("img/fundoLegume.jpeg"); ;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -14,9 +15,34 @@ html,body{
     width: 100%;
 }
 
+.default-button{
+    margin: 5px;
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #a5bd74;
+    font-size: 16px;
+    font-weight: 500;
+    border: #a5bd74 solid 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.default-button:hover{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(24deg, rgba(165,189,116,1) 38%, rgba(219,147,115,1) 74%, rgba(241,130,115,1) 89%);
+    ;
+}
+
+
 .body-login{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 
@@ -25,64 +51,69 @@ html,body{
 }
 
 .div-login{
-    margin-top: 100px;
-    display: grid;
-    grid-template-rows: auto auto;
-    align-items: flex-start;
-    justify-content: center;
-    height: 350px;
-    width: 30%;
-}
-
-.div-login a{
-    grid-column: 1;
-    font-size: 10px;
-    font-weight: 500;
-    padding-top: 7px;
-    color: rgb(165, 42, 42);
-}
-
-.div-login a:hover{
-    font-size: 10px;
-    font-weight: 500;
-    padding-top: 7px;
-    color: rgb(228, 57, 57);
-}
-.div-login-button{
-    grid-column: 1;
     display: flex;
-    flex-direction: row;
-    gap: 3px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 350px;
+    width:40%;
+    padding: 30px;
+    border: 2px solid #a5bd74;
+    background-color:rgb(0, 0, 0, 0.8) ;
+    border-radius: 15px;
 }
+
+.div-login-button{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+*:focus {
+    outline: none;
+}
+
+.form-login input{
+    border: none;
+    border-bottom: 2px solid #a5bd74;
+    border-radius: 10px;
+    background-color: transparent;
+    height: 100px;
+    color:white ;
+    font-size: 15px;
+}
+
+.form-login a{
+    color: #cce69a ;
+}
+
+
 
 .form-login{
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 115%;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
 .form-login label{
     grid-column: 1;
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     padding-top: 10px;
-    color: rgb(165, 42, 42);
+    color: white;
+
 }
 
 .form-login button{
-    height: 30px;
+    height: 40px;
     width: 60%;
-    border-color: brown;
-    background-color: brown;
-    color: rgb(255, 255, 255);
+
     font-weight: 600;
 }
 
 .form-login button:hover{
-    background-color: rgb(214, 52, 52);
-    font-weight: 500;
-    transition: all 1s ease;
+    font-weight: 700;
 }
 
 .form-login input{
@@ -107,15 +138,10 @@ html,body{
     align-items: center;
     justify-content: center;
     font-size: 12pt;
-    color: rgb(179, 7, 7);
     text-decoration: none;
     font-weight: 500;
     width: 25%;
     padding-bottom: 0.5rem ;
-}
-
-.menu a:hover{
-    color: rgb(141, 5, 5);
 }
 
 .menu a::after{
@@ -125,7 +151,6 @@ html,body{
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: rgb(141, 5, 5);
     transition: all 0.5s ease;
 }
 

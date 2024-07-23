@@ -13,6 +13,7 @@ body {
 
 .default-button{
     display: flex;
+    text-wrap: nowrap;
     align-items: center;
     justify-content: center;
     background-color: transparent;
@@ -74,8 +75,7 @@ body {
     justify-content: end;
     align-items: center;
     text-align: center;
-    margin-right: 3vw;
-    padding-right: 5px;
+    padding-right: 10px;
     margin-top: 1rem;
     width: 100%;
     height: 100%;
@@ -96,6 +96,10 @@ body {
     width: 80px;
     max-width: 80%;
     padding-bottom: 0.5rem;
+}
+
+.a-format{
+    text-decoration: none;
 }
 
 .menu button {
@@ -153,7 +157,7 @@ body {
 
 
 .impact-text{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -286,7 +290,7 @@ body {
 .form-signup button:hover {
     color: rgb(255, 255, 255);
     background: linear-gradient(90deg, rgba(89, 2, 72, 1) 0%, rgba(143, 0, 189, 1) 29%, rgba(255, 136, 0, 1) 100%);
-    ;
+    
 }
 
 .login-action{

@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".\stylelogin.css">
+    <link rel="stylesheet" href=".\styles.css">
     <title>Eventrack</title>
 </head>
+
 <body class="body-login">
-    <header class="header-login">
+    <header class="header-principal">
+        <div class="img-input">
+            <img src="./img/logoBoraBioTexto.png" height="60px">
+
+        </div>
         <nav class="menu">
-            <input type="text">
-            <a href="index.html">Eventos</a>
-            <a href="#profissional">Viagens</a>
-            <a href="#profissional">Compras</a>
-            <a href="login.html">Minha Conta</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#sobre">Contato</a>
+            <a href="#contato">Sobre</a>
+            <button id="btn-create-account" class="default-button"><a href="login.html">Entrar</a></button>
         </nav>
+        <div></div>
     </header>
     <div class="div-login">
-        <img src="img/verticalLogo.png" class="img-login">
+        <a href="index.html"><img src="img/logoBoraBioImg.png" class="img-login"></a>
         <form class="form-login">
             <label for="login">Login</label>
             <input id="login" type="email" placeholder="Digite seu email">
@@ -25,10 +32,13 @@
             <input id="senha" type="password" placeholder="Senha">
             <a href="changepass.html">Esqueceu a senha?</a>
             <div class="div-login-button">
-                <button type="button">Login</button>
-                <button id="signup" type="button" onclick="window.location.href='signup.html'">Cadastre-se</button>
+
+                <button class="default-button" id="signup" type="button"
+                    onclick="window.location.href='signup.html'">Cadastre-se</button>
+                <button class="default-button" type="button">Login</button>
             </div>
         </form>
     </div>
 </body>
+
 </html>
